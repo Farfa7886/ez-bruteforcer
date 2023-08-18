@@ -1,11 +1,14 @@
 const bruteforce = require("ez-bruteforcer");
 
-const charactersList = "oh!sle";
-const secretPassword = "hello!";
+const charactersList = "abcdefghijkl!mnopqrstuvwxyz ";
+const secretPassword = "hello world!";
+const totalCombs = bruteforce.getDispositionsNumber(charactersList, 6, 1);
+let currentIndex = 0;
 bruteforce.runSync({
   data: charactersList,
   step: (attempt) => {
-    console.log(`Trying password: ${attempt}`);
+    currentIndex++;
+    console.log(`Trying password (${currentIndex}/${totalCombs}): ${attempt}`);
     if (attempt == secretPassword) {
       console.log(`> Found password: ${attempt}`);
       return true;
@@ -14,11 +17,7 @@ bruteforce.runSync({
   finish: () => {
     console.log("> Nothing has been found:(");
   },
-  maxLength: 6,
-  minLength: 1,
+  maxLength: 12,
+  minLength: 12,
 });
-console.log(
-  "> Total possible combinations: " +
-    bruteforce.getDispositionsNumber(charactersList, 6, 1)
-);
 console.log("CJS");

@@ -1,6 +1,6 @@
 {
   "name": "ez-bruteforcer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy to use package for bruteforce attacks, with support for ECMAScript and CJS",
   "main": "./cjs/index.js",
   "module": "./mjs/index.js",

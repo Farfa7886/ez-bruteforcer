@@ -87,7 +87,7 @@ function runSync(options) {
    */
   let mustStop = false;
   function baseN(seed, size = 1) {
-    if (size < 1) throw new RangeError(`${sisze} is out of range`);
+    if (size < 1) throw new RangeError(`${size} is out of range`);
 
     const length = BigInt(seed.length) ** BigInt(size);
 
