@@ -1,0 +1,33 @@
+{
+  "name": "ez-bruteforcer",
+  "version": "1.0.0",
+  "description": "Easy to use package for bruteforce attacks, with support for ECMAScript and CJS",
+  "main": "./cjs/index.js",
+  "module": "./mjs/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "import": "./mjs/index.js",
+    "require": "./cjs/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farfa7886/ez-bruteforcer.git"
+  },
+  "keywords": [
+    "bruteforce",
+    "node",
+    "math",
+    "dispositions",
+    "permutation",
+    "brute",
+    "utility"
+  ],
+  "author": "Farfa7886",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Farfa7886/ez-bruteforcer/issues"
+  },
+  "homepage": "https://github.com/Farfa7886/ez-bruteforcer#readme"
+}
