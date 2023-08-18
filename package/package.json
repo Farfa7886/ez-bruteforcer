@@ -22,7 +22,8 @@
     "dispositions",
     "permutation",
     "brute",
-    "utility"
+    "utility",
+    "bruteforcer"
   ],
   "author": "Farfa7886",
   "license": "MIT",
